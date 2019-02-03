@@ -58,7 +58,7 @@ public class Application {
 		CountDownLatch latch = ctx.getBean(CountDownLatch.class);
 
 		LOGGER.info("Sending message...");
-		template.convertAndSend("chat", "Hello from Redis!");
+		template.convertAndSend("chat", "My own message!");
 
 		latch.await();
 
